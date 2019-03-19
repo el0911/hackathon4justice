@@ -41,7 +41,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="http://mediad.publicbroadcasting.net/p/wvxu/files/styles/x_large/public/201701/hands-in-chains.jpeg"
+                src="https://i2.wp.com/ourrescue.org/blog/wp-content/uploads/2016/09/hands-tied.png?fit=799%2C331"
                 class="d-block w-100"
               >
               <div class="carousel-caption d-none d-md-block">
@@ -57,7 +57,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://themobileassociation.in/img/E-Waste-Mandatory-Compliance-The_Mobile_Association.jpg"
+                src="https://blogs.umass.edu/Techbytes/files/2014/09/ewaste.jpg"
                 class="d-block w-100"
               >
               <div class="carousel-caption d-none d-md-block">
@@ -149,6 +149,7 @@
         </div>
       </div>
     </div>
+
     <back-to-top text="Back to top" visibleoffset="500"></back-to-top>
   </div>
 </template>
