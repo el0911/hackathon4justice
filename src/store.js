@@ -19,7 +19,7 @@ export default new Vuex.Store({
             nickname: '',
             prefix: '',
         },
-        profile: []
+        profile: {},
 
     },
     getters: {
@@ -33,7 +33,7 @@ export default new Vuex.Store({
             return state.sidebar = !state.sidebar;
         },
         addContacts(state, payload) {
-            state.profile.push(payload);
+            state.profile = payload;
         }
     },
 });

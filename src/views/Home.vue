@@ -4,7 +4,7 @@
       <div class="heading">Who Are We?</div>
       <div
         class="body"
-      >We are an organisation located in Western Africa, partnering with CSOs and other federal security agencies to help fight crime. We make use of technology for this purpose bacause why not? Everyone is gaining more knowledge daily.</div>
+      >We are an organisation located in Western Africa, partnering with CSOs and other federal security agencies to help fight crime. We make use of technology for this purpose, because why not? Everyone is gaining more knowledge daily.</div>
       <br>
       <br>
     </div>
@@ -149,7 +149,15 @@
         </div>
       </div>
     </div>
-
+    <div id="blog">
+      <div class="heading1" id="blog">Blog</div>
+      <hr>
+      <div
+        class="body1"
+      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a bibendum lacus, in dignissim eros. Aenean ipsum sem, convallis sit amet justo eu, aliquam luctus ante. Vestibulum pretium dapibus rhoncus. Phasellus tincidunt, nisi auctor laoreet auctor, nisi libero cursus quam, in auctor tellus diam sed nisl. Phasellus molestie orci sit amet dolor porta eleifend. Morbi id eleifend nunc. Etiam gravida mauris quis nunc fringilla, quis convallis mauris condimentum. In hac habitasse platea dictumst. Sed venenatis ac lectus at consequat. Vestibulum tortor nisl, condimentum et ipsum vitae, vestibulum interdum nibh. Nam risus quam, euismod vel pretium nec, varius vel mauris. Ut fringilla purus quis neque imperdiet, sit amet blandit ipsum convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus ligula scelerisque dui placerat, non vehicula justo gravida...
+        <router-link to="/blog">Read More</router-link>
+      </div>
+    </div>
     <back-to-top text="Back to top" visibleoffset="500"></back-to-top>
   </div>
 </template>
@@ -167,44 +175,68 @@ export default {
   font-size: 48px;
   text-align: center;
   font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: whitesmoke;
+}
+.heading1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 3rem;
 }
 .body {
-  font-size: 28px;
+  font-size: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+}
+.body1 {
+  font-size: 20px;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 100;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
 }
-
 img {
   height: 600px;
 }
 .carousel-caption {
-  background-color: rgb(202, 201, 201);
-  color: black;
+  background-color: rgba(3, 3, 3, 0.705);
+  color: white;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   opacity: 0.9;
   border-radius: 45px;
 }
 .btn {
-  background-color: rgb(0, 0, 39);
+  background-color: rgb(253, 215, 158);
   border-radius: 50px;
   border: black;
   opacity: 1 !important;
 }
 .btn:hover {
-  background-color: rgb(0, 0, 39);
+  background-color: rgb(253, 215, 158);
   opacity: 1 !important;
 }
 a {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
 a:hover {
-  color: white;
+  color: red;
   text-decoration: none;
 }
 #about {
-  background-color: whitesmoke;
+  background-color: teal;
+}
+hr {
+  width: 40rem;
+  position: relative;
+  left: 50rem;
 }
 </style>

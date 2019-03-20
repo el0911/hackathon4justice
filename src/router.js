@@ -10,6 +10,8 @@ import inscribethebribe from './views/InscribeTheBribe.vue';
 import coach from './views/coach.vue';
 import profile from './views/profile.vue';
 import finance from './views/financialinstitution.vue';
+import convicts from './views/convictshome.vue';
+
 
 
 
@@ -38,6 +40,11 @@ export default new Router({
                     name: 'finance',
                     component: finance
                 },
+                {
+                    path: '/',
+                    name: 'convicts',
+                    component: convicts
+                }
             ]
         },
         {

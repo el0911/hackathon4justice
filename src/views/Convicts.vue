@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-3" v-if="sidebarVisible">
+      <div class="col-2" v-if="sidebarVisible">
         <sidebar/>
       </div>
       <div class="col">
-        <div class="bring-down">
-          <router-view></router-view>
-        </div>
+        <!-- <div class="bring-down">    . -->
+        <router-view></router-view>
+        <!-- </div> -->
       </div>
     </div>
   </div>

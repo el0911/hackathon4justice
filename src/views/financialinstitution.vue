@@ -1,7 +1,7 @@
 <template>
   <div class="finance">
     <div class="row">
-      <div class="col-3">
+      <div class="col-sm-12 col-md-4">
         <div class="card" style="width: 18rem;">
           <img
             src="https://www.cioreview.com/newsimages/special/65L38wIb.jpeg"
@@ -17,7 +17,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-sm-12 col-md-4">
         <div class="card" style="width: 18rem;">
           <img
             src="https://www.activistpost.com/wp-content/uploads/2015/01/Global-Money.jpg"
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-sm-12 col-md-4">
         <div class="card" style="width: 18rem;">
           <img
             src="https://oracletimes.com/wp-content/uploads/2019/01/ppr.jpg"
@@ -55,12 +55,18 @@
 
 <style scoped>
 .finance {
-  margin-left: 400px;
-  margin-top: 250px;
+  /* margin-left: 400px; */
+  /* margin-top: 250px; */
+  padding: 5rem;
 }
 .card {
   height: 500px;
   border-radius: 10px;
+  margin-bottom: 10px;
+  /* position: relative; */
+  /* padding-left: 0; */
+  /* padding-right: 0; */
+  /* max-width: 0; */
 }
 img {
   height: 250px;

@@ -1,33 +1,35 @@
 <template>
-  <div class="sidebar" v-if="sidebarVisible">
-    <hr>
-    <div class="row">
-      <div class="col">
-        <router-link :to="{name: 'coach'}" exact>
-          <div class="one">
-            <span>Coaches/Mentors</span>
-          </div>
-        </router-link>
+  <div>
+    <div class="sidebar" v-if="sidebarVisible">
+      <hr>
+      <div class="row">
+        <div class="col">
+          <router-link :to="{name: 'coach'}" exact>
+            <div class="one">
+              <span>Coaches/Mentors</span>
+            </div>
+          </router-link>
+        </div>
       </div>
-    </div>
-    <hr>
+      <hr>
 
-    <div class="row">
-      <div class="col">
-        <router-link :to="{name: 'finance'}" exact>
-          <div class="one">Connect To A Financial Institutuion</div>
-        </router-link>
+      <div class="row">
+        <div class="col">
+          <router-link :to="{name: 'finance'}" exact>
+            <div class="one">Connect To A Financial Institutuion</div>
+          </router-link>
+        </div>
       </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col">
-        <router-link to="/deletedContacts" exact>
-          <div class="one">Find A Job</div>
-        </router-link>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <router-link to="/deletedContacts" exact>
+            <div class="one">Find A Job</div>
+          </router-link>
+        </div>
       </div>
+      <hr>
     </div>
-    <hr>
   </div>
 </template>
 
@@ -35,6 +37,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      drawer: null
+    };
+  },
   computed: {
     sidebarVisible() {
       return this.$store.getters.getSidebarVisibility;
@@ -64,39 +71,14 @@ a {
   padding: 10px;
 }
 .sidebar {
-  max-width: 250px;
+  width: 200px;
   font-weight: bold;
   font-size: 15px;
   font-family: sans-serif;
   padding: 7px;
-  transition: 0.5s;
-}
-.create {
-  padding: 7px;
-}
-.btn {
-  background-color: white;
-  border: white;
-  border-radius: 25px;
-  font-family: sans-serif;
-  padding: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  color: rgb(109, 102, 102);
-  margin: 20px;
-}
-.btn:hover {
-  color: rgb(109, 102, 102);
-}
-.mdi {
-  color: grey;
-}
-.mdi::before {
-  font-size: 20px;
-}
-.fans {
-  left: 50px;
-  position: relative;
+  /* transition: 0.05s; */
+  background-color: whitesmoke;
+  height: 65rem;
+  z-index: 10;
 }
 </style>

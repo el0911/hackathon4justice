@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="form" v-for="(contact,index) in contact" :key="index">
+    <form class="form">
       <div class="row">
         <div class="col-4">
           <span class="profile-image">{{contact.firstName[0]}}{{contact.lastName[0]}}</span>
@@ -30,18 +30,10 @@
                     title="Edit Contact"
                     data-content="Popup content"
                   ></i>
+                  Edit Contact
                 </a>
               </div>
             </span>
-            <router-link to="/">
-              <i
-                class="mdi mdi-close px-2"
-                data-toggle="popover"
-                data-placement="top"
-                title="Close"
-                data-content="Popup content"
-              ></i>
-            </router-link>
           </span>
         </div>
       </div>

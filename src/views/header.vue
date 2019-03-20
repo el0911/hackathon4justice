@@ -4,9 +4,15 @@
       <div class="toggle">
         <i class="mdi mdi-menu" @click="sidebarShow"></i>
       </div>
-      <a class="navbar-brand pl-5">
-        <div class="image" :style="{backgroundImage: 'url('+img+')'}"></div>
-      </a>
+      <div class="navbar-brand" href="#">
+        <img
+          src="../assets/Untitled design (2).png"
+          width="40"
+          height="40"
+          class="d-inline-block align-top"
+          alt
+        >
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,7 +26,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav mt-2 mt-lg-0">
           <li class="nav-item active">
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
@@ -48,13 +54,16 @@
 <script>
 export default {
   data() {
-    return {
-      img: require("../assets/Untitleddesign(1).png")
-    };
+    return {};
   },
   methods: {
     sidebarShow() {
       this.$store.commit("sidebarToggle");
+    }
+  },
+  computed: {
+    image() {
+      return this.$store.state.picture;
     }
   }
 };
@@ -64,8 +73,6 @@ export default {
 ul {
   list-style-type: none;
   text-align: center;
-  margin: 0;
-  margin-left: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,17 +80,22 @@ ul {
 li {
   display: inline-block;
   margin: 0 20px;
+  padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   padding: 6px 8px;
+  position: relative;
 }
 a:hover {
   text-decoration: none;
   color: white;
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 50px;
+  min-width: 5vh;
 }
 a:active {
   color: red !important;
@@ -100,6 +112,8 @@ a:active {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 10px;
+  background-color: red;
+  position: absolute;
 }
 .mdi-menu {
   color: white;
