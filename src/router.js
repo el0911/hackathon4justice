@@ -1,16 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import bringbacktheconvicts from './views/Convicts.vue';
-import thinkoftheblueheart from './views/BlueHeart.vue';
-import catchtheewasteoctopus from './views/EwasteOctopus.vue';
-import blowthewhistle from './views/BlowTheWhistle.vue';
-import breakthesilence from './views/BreakTheSilence.vue';
-import inscribethebribe from './views/InscribeTheBribe.vue';
-import coach from './views/coach.vue';
+import breaksilence from './views/BreakTheSilence.vue';
+import lawyer from './views/lawyer.vue';
 import profile from './views/profile.vue';
-import finance from './views/financialinstitution.vue';
-import convicts from './views/convictshome.vue';
+import lawfirms from './views/lawfirms.vue';
+import breakhome from './views/BreakSilenceHome.vue';
 
 
 
@@ -27,51 +22,27 @@ export default new Router({
             component: Home
         },
         {
-            path: '/bringbacktheconvicts',
-            name: 'Bring Back the Convicts',
-            component: bringbacktheconvicts,
+            path: '/breakthesilence',
+            name: 'BreakTheSilence',
+            component: breaksilence,
             children: [{
-                    path: 'coach',
-                    name: 'coach',
-                    component: coach,
+                    path: 'lawyer',
+                    name: 'lawyer',
+                    component: lawyer,
                 },
                 {
-                    path: '/finance',
-                    name: 'finance',
-                    component: finance
+                    path: '/lawfirms',
+                    name: 'lawfirms',
+                    component: lawfirms
                 },
                 {
                     path: '/',
-                    name: 'convicts',
-                    component: convicts
+                    name: 'breakhome',
+                    component: breakhome
                 }
             ]
         },
-        {
-            path: '/thinkoftheblueheart',
-            name: 'Think of the Blue Heart',
-            component: thinkoftheblueheart
-        },
-        {
-            path: '/catchtheewasteoctopus',
-            name: 'Catch the E-Waste Octopus',
-            component: catchtheewasteoctopus
-        },
-        {
-            path: '/blowthewhistle',
-            name: 'Blow the Whistle',
-            component: blowthewhistle
-        },
-        {
-            path: '/breakthesilence',
-            name: 'Break the Silence',
-            component: breakthesilence
-        },
-        {
-            path: '/inscribethebribe',
-            name: 'Inscribe the Bribe',
-            component: inscribethebribe
-        },
+
         {
             path: '/profile',
             name: 'profile',

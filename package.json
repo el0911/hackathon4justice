@@ -18,6 +18,7 @@
         "vue": "^2.5.17",
         "vue-backtotop": "^1.6.1",
         "vue-gettext": "^2.1.2",
+        "vue-infinite-slide-bar": "^1.0.8",
         "vue-resource": "^1.5.1",
         "vue-router": "^3.0.1",
         "vue-tel-input": "^2.0.18",

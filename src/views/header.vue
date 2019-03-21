@@ -37,10 +37,10 @@
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Blog</a>
+            <a class="nav-link" href="#testimonial">Testimonials</a>
           </li>
           <li class="nav-item">
             <router-link to="/profile" class="nav-link">Profile</router-link>
@@ -120,5 +120,8 @@ a:active {
 }
 .mdi-menu::before {
   font-size: 30px;
+}
+.navbar-brand {
+  border-radius: 50%;
 }
 </style>

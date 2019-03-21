@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-header></app-header>
-    <div class="row">
+    <div class="row content">
       <div class="col">
         <router-view/>
       </div>
@@ -24,4 +24,8 @@ export default {
 
 <style scoped>
 @import url("//cdn.materialdesignicons.com/3.5.95/css/materialdesignicons.min.css");
+
+.content {
+  min-height: 82vh;
+}
 </style>

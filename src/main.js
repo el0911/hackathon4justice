@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import BackToTop from 'vue-backtotop';
 import 'vue-tel-input/dist/vue-tel-input.css';
+import InfiniteSlideBar from 'vue-infinite-slide-bar'
 
 import VueTelInput from 'vue-tel-input';
 
@@ -21,6 +22,7 @@ Vue.use(VueRouter);
 Vue.use(Vuetify);
 Vue.use(BackToTop);
 Vue.use(VueTelInput);
+Vue.component('InfiniteSlideBar', InfiniteSlideBar);
 
 new Vue({
     router,

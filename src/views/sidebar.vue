@@ -4,9 +4,9 @@
       <hr>
       <div class="row">
         <div class="col">
-          <router-link :to="{name: 'coach'}" exact>
+          <router-link :to="{name: 'lawyer'}" exact>
             <div class="one">
-              <span>Coaches/Mentors</span>
+              <span>Sign Up/Login as a Lawyer</span>
             </div>
           </router-link>
         </div>
@@ -15,16 +15,8 @@
 
       <div class="row">
         <div class="col">
-          <router-link :to="{name: 'finance'}" exact>
-            <div class="one">Connect To A Financial Institutuion</div>
-          </router-link>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col">
-          <router-link to="/deletedContacts" exact>
-            <div class="one">Find A Job</div>
+          <router-link :to="{name: 'lawfirms'}" exact>
+            <div class="one">Connect With Reputable Law Firms</div>
           </router-link>
         </div>
       </div>
@@ -57,7 +49,7 @@ export default {
   text-decoration: none;
 }
 a.router-link-exact-active {
-  color: red;
+  color: rgb(31, 182, 167);
   max-height: 3px;
   width: 200px;
 }
