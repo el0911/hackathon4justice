@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import breaksilence from './views/BreakTheSilence.vue';
-import lawyer from './views/lawyer.vue';
+import login from './views/login.vue';
 import profile from './views/profile.vue';
-import lawfirms from './views/lawfirms.vue';
-import breakhome from './views/BreakSilenceHome.vue';
+import signup from './views/signup.vue';
+import about from './views/about.vue';
+
+
 
 
 
@@ -19,35 +20,28 @@ export default new Router({
     routes: [{
             path: '/',
             name: 'home',
-            component: Home
-        },
-        {
-            path: '/breakthesilence',
-            name: 'BreakTheSilence',
-            component: breaksilence,
-            children: [{
-                    path: 'lawyer',
-                    name: 'lawyer',
-                    component: lawyer,
-                },
-                {
-                    path: '/lawfirms',
-                    name: 'lawfirms',
-                    component: lawfirms
-                },
-                {
-                    path: '/',
-                    name: 'breakhome',
-                    component: breakhome
-                }
-            ]
-        },
+            component: Home,
+    },
+            {
+                path: '/login',
+                name: 'login',
+                component: login,
+            },
+            {
+                path: '/signup',
+                name: 'signup',
+                component: signup
+            },
 
         {
             path: '/profile',
             name: 'profile',
             component: profile
         },
-
+        {
+            path: '/about',
+            name: 'about',
+            component: about
+        },
     ]
 });

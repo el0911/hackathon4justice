@@ -1,87 +1,13 @@
 <template>
   <div>
-    <div id="about" class="p-5">
-      <div class="heading">Who Are We?</div>
-      <div
-        class="body"
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</div>
-      <br>
-      <br>
-    </div>
-    <div id="whatwedo">
-      <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://www.lebmash.org/wp-content/uploads/2017/05/BTS-Mug-design.jpg"
-                class="d-block w-100"
-              >
-              <div
-                class="carousel-caption d-none d-md-block"
-              >We're shattering all chains, mending all the pain.</div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="http://www.uucheyenne.org/wp-content/uploads/2017/10/breaking-the-silence.jpg"
-                class="d-block w-100"
-              >
-              <div class="carousel-caption d-none d-md-block">Fight... It's time to be free.</div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://anxietyunited.com/wp-content/uploads/2018/02/TimeToTalk-768x406.jpg"
-                class="d-block w-100"
-              >
-              <div
-                class="carousel-caption d-none d-md-block"
-              >Speak Up! You have no right to silence.</div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://i.cbc.ca/1.4358398.1520560871!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/me-too.jpg"
-                class="d-block w-100"
-              >
-              <div
-                class="carousel-caption d-none d-md-block"
-              >You're not alone. We're here to help and support you.</div>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleCaptions"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="sign-up">
-      <v-layout row wrap>
-        <v-flex xs12 class="text-xs-center">
-          <v-btn outline round color="teal" to="/breakthesilence">Sign Up</v-btn>
-        </v-flex>
-      </v-layout>
-    </div>
-    <hr>
+    <infinite-slide-bar :barStyle="{ background: 'turquoise', padding: '5px 0' }">
+      <span style="color: black;" class="text">| Know Your Rights as a Child Today!</span>
+    </infinite-slide-bar>
+    <v-parallax height="350" src="https://ak1.picdn.net/shutterstock/videos/33005371/thumb/1.jpg"></v-parallax>
+<br>
+<br>
+    <button class="btn btn-block px-3">Play The Know Your Rights Game</button>
+
     <div id="testimonial">
       <div class="body1">
         <v-layout row wrap>
@@ -165,57 +91,26 @@
         </v-layout>
       </div>
     </div>
+  
     <back-to-top text="Back to top" visibleoffset="500"></back-to-top>
   </div>
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {};
+  }, 
+  
+  computed: {
+  
   }
 };
 </script>
 
 <style scoped>
-.heading {
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: whitesmoke;
-}
-
-.body {
-  font-size: 25px;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: whitesmoke;
-}
-img {
-  height: 50rem;
-}
-
-.carousel-caption {
-  background-color: rgba(3, 3, 3, 0.705);
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  opacity: 0.9;
-  border-radius: 45px;
-  font-family: cursive;
-}
-.btn {
-  background-color: black;
-  border-radius: 50px;
-  border: black;
-  opacity: 1 !important;
-}
-.btn:hover {
-  background-color: black;
-  opacity: 1 !important;
-}
 a {
   color: white;
   font-weight: bold;
@@ -225,10 +120,10 @@ a:hover {
   color: turquoise;
   text-decoration: none;
 }
-#about {
-  background-color: teal;
-}
 
+.text{
+  font-family: cursive;
+}
 h2 {
   color: #333;
   text-align: center;
@@ -321,5 +216,47 @@ h2::after {
 .carousel-indicators li.active {
   background: #555;
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.btn{
+  background: #eb94d0;
+/* to create the gradients */
+
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+
+/* to give the curved edge for the btn */
+
+-webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius:15px;
+
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+
+font-family: Arial;
+  color: #fafafa;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*button on hover*/
+
+.btn:hover {
+
+  background: #2079b0;
+
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+
+  text-decoration: none;
 }
 </style>
