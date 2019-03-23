@@ -31,7 +31,7 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#whatwedo">What We Do</a>
+            <a class="nav-link" href="#whatwedo">Whatjhvh We Do</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About Us</a>
