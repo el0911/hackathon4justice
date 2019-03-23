@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 import login from './views/login.vue';
 import profile from './views/profile.vue';
 import signup from './views/signup.vue';
-import about from './views/about.vue';
+import about from './views/About.vue';
 
 
 

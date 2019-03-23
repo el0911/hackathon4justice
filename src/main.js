@@ -13,12 +13,16 @@ import 'vue-tel-input/dist/vue-tel-input.css';
 import InfiniteSlideBar from 'vue-infinite-slide-bar'
 import VeeValidate from 'vee-validate';
 import VueTelInput from 'vue-tel-input';
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 Vue.config.productionTip = false;
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
+Vue.use(BootstrapVue)
 Vue.use(Vuetify);
 Vue.use(BackToTop);
 Vue.use(VueTelInput);

@@ -12,12 +12,12 @@
 
 <script>
 import header from "./views/header.vue";
-import footer from "./views/footer.vue";
+// import footer from "./views/footer.vue";
 
 export default {
   components: {
     "app-header": header,
-    "app-footer": footer
+    // "app-footer": footer
   }
 };
 </script>
